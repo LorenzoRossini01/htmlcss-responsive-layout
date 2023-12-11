@@ -153,6 +153,7 @@ nav span {
 /* tablet media */
 
 @media screen and (max-width: 768px) {
+  /* header */
   header nav ul {
     display: none;
   }
@@ -160,11 +161,14 @@ nav span {
   nav span {
     display: inline-block;
   }
+
+  /* demo app */
   #demo-app .card .col-1-2 {
     width: 100%;
     padding: 15px;
   }
 
+  /* strategic planning */
   #strategic-planning .container .card {
     width: 100%;
     margin: 0 1rem;
