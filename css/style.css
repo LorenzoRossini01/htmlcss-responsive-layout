@@ -143,11 +143,11 @@ nav span {
   align-items: flex-end;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem 0;
 }
 
 #strategic-planning .container .card {
   width: 35%;
-  margin: 2rem 0;
 }
 
 /* tablet media */
@@ -167,6 +167,7 @@ nav span {
 
   #strategic-planning .container .card {
     width: 100%;
+    margin: 0 1rem;
   }
 }
 
