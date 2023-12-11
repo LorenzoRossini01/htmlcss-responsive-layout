@@ -232,4 +232,8 @@ nav span {
   #testimonials .card {
     flex-direction: column;
   }
+
+  .testimonial-caption p {
+    padding-top: var(--margin-vertical);
+  }
 }
