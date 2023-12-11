@@ -135,12 +135,38 @@ nav span {
 #demo-app .card .col-1-2 {
   padding-top: 0;
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-vertical);
+}
+
+#demo-app .card .col-1-2 h3 {
+  color: var(--secondary-color);
+}
+
+#demo-app .card p {
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #62788a;
+}
+
+#demo-app .btn {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+
+  color: white;
+}
+
+#demo-app .btn i {
+  padding-right: 0.5rem;
 }
 
 .card {
   background-color: var(--card-bg-color);
   padding: 1rem;
   height: 100%;
+  border-radius: 1rem;
 }
 
 /* SECTION STRATEGIC PLANNING */
@@ -199,6 +225,10 @@ nav span {
   line-height: 1rem;
   text-align: center;
   background-color: var(--primary-color);
+}
+
+#strategic-planning .img-card .btn i {
+  font-weight: bolder;
 }
 
 #strategic-planning .container .card div {
@@ -346,6 +376,10 @@ nav span {
   background-color: var(--primary-color);
   color: white;
   padding: 0.5rem 0.5rem;
+}
+
+.about-us-img .linkedin.btn i {
+  padding-right: 0.2rem;
 }
 
 /* SECTION GET STARTED */
