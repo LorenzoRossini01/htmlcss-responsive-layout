@@ -162,8 +162,47 @@ nav span {
   width: 35%;
 }
 
+#strategic-planning .container .card:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-vertical);
+  background: none;
+  color: white;
+}
+
+#strategic-planning .content-card {
+}
+
+#strategic-planning .container .img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--margin-vertical);
+  text-align: center;
+  background-color: white;
+}
+
+#strategic-planning .img-card .img-caption {
+  line-height: 1.7rem;
+}
+
+#strategic-planning .img-card .img-caption h3 {
+  font-weight: 800;
+  padding-bottom: var(--margin-vertical);
+}
+
+#strategic-planning .img-card .btn {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
 #strategic-planning .container .card div {
-  margin: var(--margin-vertical) 0;
+  margin: 0;
 }
 
 /* SECTION TESTIMONIALS */
