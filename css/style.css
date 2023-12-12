@@ -183,7 +183,6 @@ nav span {
 }
 
 #demo-app .phone-img {
-  height: 300px;
   width: 280px;
   position: relative;
   top: 2rem;
@@ -407,7 +406,19 @@ nav span {
 }
 
 .about-us-img img {
-  max-width: 180px;
+  height: 100%;
+}
+
+#about-us .layer-img {
+  position: relative;
+}
+
+#about-us .layer-img i {
+  position: absolute;
+  top: 0;
+  right: 3.5rem;
+  font-size: 4rem;
+  color: var(--primary-color);
 }
 
 #about-us .about-us-img .card {
@@ -502,6 +513,10 @@ footer a {
 /* tablet media */
 
 @media screen and (max-width: 768px) {
+  .container {
+    overflow: hidden;
+  }
+
   /* header */
   header nav ul {
     display: none;
@@ -512,14 +527,28 @@ footer a {
   }
 
   /* demo app */
+
+  #demo-app {
+    margin-bottom: calc(var(--margin-vertical) * 2);
+  }
   #demo-app .card .col-1-2 {
     width: 100%;
-    padding: 15px;
+    padding: var(--margin-vertical);
+    padding-bottom: 0;
+  }
+
+  #demo-app .card .col-1-2:first-of-type {
+    height: 250px;
   }
 
   #demo-app .phone-img {
-    top: 3rem;
-    left: 0;
+    position: relative;
+    left: 0rem;
+  }
+
+  #demo-app .card:first-of-type {
+    display: flex;
+    flex-direction: column;
   }
 
   /* strategic planning */
@@ -540,6 +569,10 @@ footer a {
   #work-with-us .col-1-3 {
     width: 50%;
   }
+
+  #about-us .layer-img i {
+    right: 1rem;
+  }
 }
 
 /* smartphone media */
@@ -547,6 +580,21 @@ footer a {
 @media screen and (max-width: 480px) {
   [class*="col"] {
     width: 100%;
+  }
+
+  #demo-app .card .col-1-2 {
+    min-height: 200px;
+    padding-bottom: 0;
+  }
+
+  #demo-app .phone-img {
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #demo-app .card:first-of-type {
+    padding-bottom: 0;
   }
 
   #testimonials .card {
@@ -589,5 +637,17 @@ footer a {
   .about-us-img .card {
     padding-left: 0;
     margin-top: var(--margin-vertical);
+  }
+
+  #about-us .img-round {
+    width: 60%;
+  }
+
+  #about-us .layer-img i {
+    right: 7.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
   }
 }
