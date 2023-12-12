@@ -576,6 +576,10 @@ footer a {
 /* smartphone media */
 
 @media screen and (max-width: 480px) {
+  header .container {
+    margin-top: 0;
+  }
+
   [class*="col"] {
     width: 100%;
   }
