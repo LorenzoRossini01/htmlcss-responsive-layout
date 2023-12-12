@@ -1,11 +1,8 @@
 :root {
   --primary-color: #9792e4;
   --secondary-color: #0084fd;
-
   --card-bg-color: #b5ddff;
-  --card-color: #5b6f81;
-
-  --strategic-bg-color: #9792e4;
+  --card-color: #353535;
 
   --margin-vertical: 30px;
 }
@@ -44,10 +41,14 @@ a {
   width: fit-content;
 }
 
+.card {
+  border-radius: 1rem;
+}
+
 /* GRID */
 
 .container {
-  max-width: 980px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -87,6 +88,20 @@ a {
   padding: 2rem;
 }
 
+.img-round {
+  border-radius: 50%;
+  background-color: antiquewhite;
+  aspect-ratio: 1;
+  width: 80%;
+  overflow: hidden;
+}
+
+.img-round > img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
 /* HEADER */
 
 header {
@@ -102,10 +117,10 @@ header > .container {
 
 header > .container > .logo,
 header > .container > nav {
+  padding: 20px;
   /* debug */
-  padding: 25px;
-  color: black;
-  background-color: var(--card-bg-color);
+  /* color: black;
+  background-color: var(--card-bg-color); */
 }
 
 header nav ul {
@@ -137,10 +152,12 @@ nav span {
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--margin-vertical);
+  justify-content: space-around;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
-#demo-app .card .col-1-2 h3 {
+#demo-app .card h3 {
   color: var(--secondary-color);
 }
 
@@ -153,59 +170,87 @@ nav span {
 #demo-app .btn {
   background-color: var(--secondary-color);
   padding: 0.5rem 2rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.1rem;
 
   color: white;
 }
 
 #demo-app .btn i {
   padding-right: 0.5rem;
+  font-size: 1rem;
+  color: white;
 }
 
-.card {
+#demo-app .phone-img {
+  height: 300px;
+  width: 280px;
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+}
+
+#demo-app .card {
   background-color: var(--card-bg-color);
   padding: 1rem;
   height: 100%;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-vertical);
+  padding-top: var(--margin-vertical);
+  padding-bottom: var(--margin-vertical);
+  text-align: center;
+}
+
+#demo-app i {
+  font-size: 5rem;
+  color: var(--secondary-color);
 }
 
 /* SECTION STRATEGIC PLANNING */
 
 #strategic-planning {
-  background-color: var(--strategic-bg-color);
+  background-color: var(--primary-color);
 }
 
 #strategic-planning .container {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 2rem;
+  max-width: 800px;
   padding: 2rem 0;
 }
 
-#strategic-planning .container .card {
-  width: 35%;
+#strategic-planning .row {
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
-#strategic-planning .container .card:first-of-type {
-  display: flex;
-  flex-direction: column;
-  gap: var(--margin-vertical);
+#strategic-planning .container .col-1-2:first-of-type {
   background: none;
   color: white;
 }
 
-#strategic-planning .content-card {
+#strategic-planning .col-1-2:first-of-type {
+  min-height: 650px;
 }
 
+#strategic-planning .col-1-2:first-of-type,
 #strategic-planning .container .img-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+#strategic-planning .container .img-card {
   align-items: center;
-  gap: var(--margin-vertical);
   text-align: center;
   background-color: white;
+  padding-top: var(--margin-vertical);
+  padding-bottom: var(--margin-vertical);
+}
+
+#strategic-planning .img-card img {
+  height: 200px;
 }
 
 #strategic-planning .img-card .img-caption {
@@ -242,7 +287,7 @@ nav span {
 }
 
 #testimonials h2 {
-  color: var(--strategic-bg-color);
+  color: var(--primary-color);
   margin: var(--margin-vertical) 0;
 }
 
@@ -250,7 +295,7 @@ nav span {
   display: flex;
   align-items: center;
   margin: var(--margin-vertical) 0;
-  background: var(--strategic-bg-color);
+  background: var(--primary-color);
   color: white;
   padding: 2rem 1rem;
 }
@@ -270,7 +315,7 @@ nav span {
 
 /* SECTION WORK WITH US */
 #work-with-us {
-  background-color: var(--strategic-bg-color);
+  background-color: var(--primary-color);
   padding-bottom: var(--margin-vertical);
 }
 
@@ -460,8 +505,13 @@ footer a {
     padding: 15px;
   }
 
+  #demo-app .phone-img {
+    top: 3rem;
+    left: 0;
+  }
+
   /* strategic planning */
-  #strategic-planning .container .card {
+  #strategic-planning .container .col-1-2 {
     width: 100%;
     margin: 0 1rem;
   }
@@ -489,6 +539,15 @@ footer a {
 
   #testimonials .card {
     flex-direction: column;
+  }
+
+  .testimonial-img {
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonial .img-round {
   }
 
   .testimonial-caption p {
