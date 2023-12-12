@@ -263,16 +263,14 @@ nav span {
 
 #strategic-planning .img-card .btn {
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  padding: 1rem;
-  line-height: 1rem;
-  text-align: center;
+  aspect-ratio: 1;
+  line-height: 3rem;
   background-color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
 #strategic-planning .img-card .btn i {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 #strategic-planning .container .card div {
@@ -582,32 +580,65 @@ footer a {
     width: 100%;
   }
 
+  .container {
+    margin: 1.5rem;
+  }
+
+  .card {
+    border-radius: 3rem;
+  }
+  /* demo app */
   #demo-app .card .col-1-2 {
     min-height: 200px;
     padding-bottom: 0;
   }
 
   #demo-app .phone-img {
-    position: static;
+    position: relative;
     margin: 0 auto;
-    width: 100%;
   }
 
-  #demo-app .card:first-of-type {
-    padding-bottom: 0;
+  /* strategic planning */
+
+  #strategic-planning .img-card {
+    text-align: center;
   }
+
+  #strategic-planning .img-card img {
+    height: 300px;
+  }
+
+  #strategic-planning .img-caption {
+    width: 80%;
+    padding-top: var(--margin-vertical);
+    padding-bottom: var(--margin-vertical);
+    font-size: 1.5rem;
+  }
+
+  #strategic-planning .img-caption p {
+    font-style: italic;
+  }
+
+  #strategic-planning .img-card .btn {
+    line-height: 4rem;
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+
+  /* testimonials */
 
   #testimonials .card {
     flex-direction: column;
     padding: 2rem;
     text-align: center;
+    width: 100%;
   }
 
   .testimonial-img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
   }
+
+  .testimonial-img .img-round,
   .testimonial-caption {
     width: 100%;
   }
