@@ -284,9 +284,11 @@ nav span {
 .section-header {
   margin: 2rem 0;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 #testimonials h2 {
+  font-size: 2.5rem;
   color: var(--primary-color);
   margin: var(--margin-vertical) 0;
 }
@@ -304,13 +306,23 @@ nav span {
   width: 30%;
 }
 
+.testimonial-img img {
+  height: 100%;
+}
+
 .testimonial-caption {
   width: 70%;
+  font-size: 1.3rem;
 }
 
 .testimonial-caption p {
   padding-bottom: var(--margin-vertical);
   line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.testimonial-caption p i {
+  font-size: 1.5rem;
 }
 
 /* SECTION WORK WITH US */
@@ -539,15 +551,17 @@ footer a {
 
   #testimonials .card {
     flex-direction: column;
+    padding: 2rem;
+    text-align: center;
   }
 
   .testimonial-img {
-    /* text-align: center; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-
-  #testimonial .img-round {
+  .testimonial-caption {
+    width: 100%;
   }
 
   .testimonial-caption p {
